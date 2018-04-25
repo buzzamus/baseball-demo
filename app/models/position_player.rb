@@ -3,16 +3,19 @@ class PositionPlayer < ApplicationRecord
 
   def set_stats
     player_stats = {
-      hits: self.hits,
-      singles: self.singles,
-      doubles: self.doubles,
-      triples: self.triples,
-      hr: self.hr,
-      walks: self.walks,
-      hbp: self.hbp,
-      at_bats: self.at_bats,
+      hits: hits,
+      singles: singles,
+      doubles: doubles,
+      triples: triples,
+      hr: hr,
+      walks: walks,
+      hbp: hbp,
+      at_bats: at_bats
     }
     self.avg = Baseball.compile(player_stats).batting_average
+    self.obp = Baseball.compile(player_stats).obp
+    self.slg = Baseball.compile(player_stats).slg
+    self.ops = Baseball.compile(player_stats).ops
   end
 
   validates :name, presence: true, length: { in: 3..80 }
