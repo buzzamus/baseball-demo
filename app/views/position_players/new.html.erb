@@ -1,2 +1,40 @@
-<h1>PositionPlayer#new</h1>
-<p>Find me in app/views/position_player/new.html.erb</p>
+<h1 class="center">Create A Position Player</h1>
+
+<%= form_for(@player, html: { role: 'form' }) do |f| %>
+  <div class="center">
+    <p><%= f.label :name %></p>
+    <p><%= f.text_field :name %></p>
+
+    <p><%= f.label :position %></p>
+    <p><%= f.text_field :position %></p>
+
+    <p><%= f.label :singles %></p>
+    <p><%= f.text_field :singles %></p>
+
+    <p><%= f.label :doubles %></p>
+    <p><%= f.text_field :doubles %></p>
+
+    <p><%= f.label :triples %></p>
+    <p><%= f.text_field :triples %></p>
+
+    <p>Homeruns</p>
+    <p><%= f.text_field :hr %></p>
+
+    <p><%= f.label "at bats" %></p>
+    <p><%= f.text_field :at_bats %></p>
+
+    <p><%= f.label :walks %></p>
+    <p><%= f.text_field :walks %></p>
+
+    <p><%= f.label "hit by pitch" %></p>
+    <p><%= f.text_field :hbp %></p>
+
+    <p><%= f.label "sac flies" %></p>
+    <p><%= f.text_field :sac_flies %></p>
+
+    <p>RBIs (if you are into that sort of thing)</p>
+    <p><%= f.text_field :rbis %></p>
+
+    <%= f.submit %>
+  </div>
+<% end %>
