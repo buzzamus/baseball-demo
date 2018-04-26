@@ -1,4 +1,6 @@
 class PositionPlayersController < ApplicationController
+  before_action :set_player, only: [:show, :edit, :update, :destroy]
+  
   def index
     @players = PositionPlayer.all
   end
@@ -34,5 +36,9 @@ class PositionPlayersController < ApplicationController
   def position_player_params
     params.require(:position_player).permit(:name, :position, :hits, :singles, :doubles, :triples, :hr,
                                             :walks, :at_bats, :sac_flies, :hbp, :rbis)
+  end
+
+  def set_player
+    @player = PositionPlayer.find(params[:id])
   end
 end

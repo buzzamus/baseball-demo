@@ -17,6 +17,8 @@ class CreatePositionPlayers < ActiveRecord::Migration[5.2]
       t.string :obp
       t.string :slg
       t.string :ops
+      t.string :runs_created
+      t.string :iso
       t.timestamps
     end
   end

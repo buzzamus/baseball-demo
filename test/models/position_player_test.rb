@@ -54,4 +54,12 @@ class PositionPlayerTest < ActiveSupport::TestCase
   test "ops should be figured automatically" do
     assert_equal ".984", @player.ops
   end
+
+  test "runs created should be figured automatically" do
+    assert_equal "139.74", @player.runs_created
+  end
+
+  test "iso should be figured automatically" do
+    assert_equal ".273", @player.iso
+  end
 end

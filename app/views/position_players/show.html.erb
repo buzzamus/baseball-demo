@@ -1,2 +1,11 @@
-<h1>PositionPlayer#show</h1>
-<p>Find me in app/views/position_player/show.html.erb</p>
+<h1 class="center"><%= @player.name %></h1>
+
+<h3 class="center"><%= @player.position %></h3>
+
+<div class="center">
+  <p>Slashline: <%= @player.avg %>/<%= @player.obp %>/<%= @player.slg %></p>
+  <p> OPS: <%= @player.ops %></p>
+  <p>RBIs: <%= @player.rbis %></p>
+  <p>Isolated Power: <%= @player.iso %></p>
+  <p>Runs Created: <%= @player.runs_created %></p>
+</div>

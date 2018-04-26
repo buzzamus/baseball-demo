@@ -29,6 +29,8 @@ ActiveRecord::Schema.define(version: 2018_04_25_103248) do
     t.string "obp"
     t.string "slg"
     t.string "ops"
+    t.string "runs_created"
+    t.string "iso"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

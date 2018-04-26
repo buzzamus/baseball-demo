@@ -1,24 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a straightforward demo of the "Baseball" Ruby Gem (_insert_link_here_)
 
-Things you may want to cover:
+You can view the baseball Ruby Gem repo at _Insert Link Here_
 
-* Ruby version
+* Ruby version 2.5.1
 
 * System dependencies
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+ * "baseball" Ruby Gem

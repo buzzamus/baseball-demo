@@ -18,6 +18,8 @@ class PositionPlayer < ApplicationRecord
   validates :obp, allow_nil: true, length: { in: 0..30 }
   validates :slg, allow_nil: true, length: { in: 0..30 }
   validates :ops, allow_nil: true, length: { in: 0..30 }
+  validates :iso, allow_nil: true, length: { in: 0..30 }
+  validates :runs_created, allow_nil: true, length: { in: 0..30 }
 
   private
 
@@ -49,6 +51,8 @@ class PositionPlayer < ApplicationRecord
     self.obp = Baseball.compile(player_stats).obp
     self.slg = Baseball.compile(player_stats).slg
     self.ops = Baseball.compile(player_stats).ops
+    self.iso = Baseball.compile(player_stats).iso
+    self.runs_created = Baseball.compile(player_stats).runs_created
   end
 
   def set_hits
