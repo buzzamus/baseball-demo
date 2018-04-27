@@ -2,5 +2,5 @@
 <hr/>
 
 <% @players.each do |player| %>
-  <h3 class="center"><%= player.name %></h3>
+  <h3 class="center"><%= link_to player.name, position_player_path(player) %></h3>
 <% end %>

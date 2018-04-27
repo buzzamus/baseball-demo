@@ -1,6 +1,6 @@
 class PositionPlayersController < ApplicationController
   before_action :set_player, only: [:show, :edit, :update, :destroy]
-  
+
   def index
     @players = PositionPlayer.all
   end
@@ -23,6 +23,12 @@ class PositionPlayersController < ApplicationController
   end
 
   def update
+    if @player.update(position_player_params)
+      flash[:success] = "Your player was successfully updated"
+      redirect_to position_player_path(@player)
+    else
+      render 'edit'
+    end
   end
 
   def show

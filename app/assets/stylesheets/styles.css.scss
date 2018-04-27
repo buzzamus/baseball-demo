@@ -7,3 +7,35 @@ h1, h2, h3, h4, h5, h6, p {
 .center {
   text-align: center;
 }
+
+.img-reduce {
+  height: 42px;
+  width: auto;
+  margin-bottom: -12px;
+  margin-left: 8px;
+}
+
+.top-pad {
+  margin-top: 30px;
+}
+
+.bottom-pad {
+  margin-bottom: 30px;
+}
+
+.btn-theme {
+  width: 40px;
+  height: 20px;
+  border: 2px solid black;
+  border-radius: 15px;
+  background-color: #ea5454;
+  font-size: 1.2em;
+  margin: 0 auto;
+  padding-top: 25px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 25px;
+  margin-top: 80px;
+  text-decoration: none;
+  font-family: Arial, serif, sans-serif;
+}
