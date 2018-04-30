@@ -53,7 +53,7 @@ class PitcherTest < ActiveSupport::TestCase
   end
 
   test "K per nine should be figured automatically" do
-    assert_equal "8.7", @pitcher.k_per_nine
+    assert_equal "8.8", @pitcher.k_per_nine
   end
 
   test "BB per nine should be figured automatically" do

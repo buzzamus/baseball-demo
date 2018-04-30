@@ -1,0 +1,26 @@
+<%= form_for(@pitcher, html: { role: 'form' }) do |f| %>
+  <div class="center">
+    <p><%= f.label :name %></p>
+    <p><%= f.text_field :name %></p>
+
+    <p><%= f.label :arm %></p>
+    <p><%= f.text_field :arm %></p>
+
+    <p><%= f.label :hits %></p>
+    <p><%= f.text_field :hits %></p>
+
+    <p><%= f.label :walks %></p>
+    <p><%= f.text_field :walks %></p>
+
+    <p><%= f.label "strikeouts" %></p>
+    <p><%= f.text_field :so %></p>
+
+    <p>Earned Runs</p>
+    <p><%= f.text_field :er %></p>
+
+    <p><%= f.label "Innings Pitched" %></p>
+    <p><%= f.text_field :ip %></p>
+
+    <%= f.submit %>
+  </div>
+<% end %>

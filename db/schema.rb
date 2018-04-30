@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2018_04_27_205647) do
     t.string "name"
     t.string "arm"
     t.integer "er"
-    t.integer "ip"
+    t.float "ip"
     t.integer "walks"
     t.integer "hits"
     t.integer "so"
