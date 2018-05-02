@@ -1,14 +1,23 @@
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <h1 class="center">Baseball Stats Compiler</h1>
-    </div>
-  </div>
-  <h3 class="center">A demo of the "Baseball" Ruby Gem</h3>
 
-  <p class="center">'baseball' is a Ruby library for easily calculating and formatting baseball statistics</p>
-  <p class="center">Check it out at <a href="rubygems.org/gems/baseball">rubygems.org</a></p>
-  <p class="center">View the source code, or contribute on <a href="github.com/buzzamus/baseball-demo"><%= image_tag("GitHub.png", class: "img-reduce") %></a></p>
-  <h3 class="center top-pad bottom-pad">See how it works:</h3>
-  <p class="center"><%= link_to "Batter Stats", new_position_player_path, class: "btn btn-danger" %></p>
+<div class="jumbotron center">
+    <h1 class="center">Baseball Stats Compiler</h1>
+    <h3 class="center">A demo of the "Baseball" Ruby Gem</h3>
+    <h3 class="center top-pad bottom-pad">See how it works:</h3>
+    <p class="center">
+      <span>
+        <%= link_to "Figure Batter Stats", new_position_player_path, class: "btn btn-large btn-primary" %>
+      </span>
+      <span>
+        <%= link_to "Figure Pitcher Stats", new_pitcher_path, class: "btn btn-large btn-danger" %>
+      </span>
+    </p>
 </div>
+<div class="center">
+  <p>'baseball' is a Ruby library for easily calculating and formatting baseball statistics</p>
+  <p>Check it out at <a href="rubygems.org/gems/baseball">rubygems.org</a></p>
+  <p>View the source code, or contribute on <a href="github.com/buzzamus/baseball-demo"><%= image_tag("GitHub.png", class: "img-reduce") %></a></p>
+  <p>*All data is automatically deleted after 7 days<p>
+  <p>(It is just a demo after all!)</p>
+</div>
+
+<%= render 'layouts/footer' %>

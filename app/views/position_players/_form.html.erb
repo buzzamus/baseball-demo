@@ -15,7 +15,7 @@
     <p><%= f.label :triples %></p>
     <p><%= f.text_field :triples %></p>
 
-    <p>Homeruns</p>
+    <p><%= f.label "Home runs" %></p>
     <p><%= f.text_field :hr %></p>
 
     <p><%= f.label "at bats" %></p>
@@ -30,9 +30,9 @@
     <p><%= f.label "sac flies" %></p>
     <p><%= f.text_field :sac_flies %></p>
 
-    <p>RBIs (if you are into that sort of thing)</p>
+    <p class="bold-text">RBIs (if you are into that sort of thing)</p>
     <p><%= f.text_field :rbis %></p>
 
-    <%= f.submit %>
+    <%= f.submit class: "btn btn-large btn-danger bottom-marg" %>
   </div>
 <% end %>

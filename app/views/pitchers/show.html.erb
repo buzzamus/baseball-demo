@@ -6,4 +6,5 @@
   <p>WHIP: <%= @pitcher.whip %></p>
   <p>K/9: <%= @pitcher.k_per_nine %></p>
   <p>BB/9: <%= @pitcher.bb_per_nine %></p>
+  <p><%= link_to "Edit Pitcher", edit_pitcher_path(@pitcher), class: "btn btn-large btn-danger" %></p>
 </div>

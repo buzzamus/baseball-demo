@@ -15,12 +15,12 @@
     <p><%= f.label "strikeouts" %></p>
     <p><%= f.text_field :so %></p>
 
-    <p>Earned Runs</p>
+    <p><%= f.label "Earned Runs" %></p>
     <p><%= f.text_field :er %></p>
 
     <p><%= f.label "Innings Pitched" %></p>
     <p><%= f.text_field :ip %></p>
 
-    <%= f.submit %>
+    <%= f.submit class: "btn btn-large btn-danger bottom-marg" %>
   </div>
 <% end %>
