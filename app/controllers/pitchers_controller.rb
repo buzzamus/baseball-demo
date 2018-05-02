@@ -33,9 +33,6 @@ class PitchersController < ApplicationController
   def show
   end
 
-  def destroy
-  end
-
   private
 
   def pitcher_params

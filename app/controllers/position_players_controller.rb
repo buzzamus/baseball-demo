@@ -33,9 +33,6 @@ class PositionPlayersController < ApplicationController
   def show
   end
 
-  def destroy
-  end
-
   private
 
   def position_player_params

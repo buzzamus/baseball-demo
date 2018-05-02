@@ -1,21 +1,28 @@
-
-
 h1, h2, h3, h4, h5, h6, p {
   font-family:  Arial, serif, sans-serif;
+}
+
+p {
+  font-size: 1.2em;
 }
 
 hr {
   width: 33%;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 .center {
   text-align: center;
+  background-size: cover;
 }
 
 .img-reduce {
   height: 42px;
   width: auto;
-  margin-bottom: -12px;
+  margin-bottom: 4px;
   margin-left: 8px;
 }
 
