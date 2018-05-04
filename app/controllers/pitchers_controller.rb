@@ -12,7 +12,7 @@ class PitchersController < ApplicationController
     @pitcher = Pitcher.new(pitcher_params)
     if @pitcher.save
       flash[:success] = "Pitcher saved successfully"
-      redirect_to pitchers_path(@pitcher)
+      redirect_to pitcher_path(@pitcher)
     else
       render 'new'
     end

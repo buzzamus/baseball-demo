@@ -2,7 +2,7 @@
 <div class="center">
 
   <% @pitchers.each do |pitcher| %>
-  <h3><%= link_to "#{pitcher.name} - #{pitcher.arm}", pitcher_path(pitcher) %></h3>
+  <h3 class="link-border"><%= link_to "#{pitcher.name} - #{pitcher.arm}", pitcher_path(pitcher) %></h3>
   <% end %>
 
 </div>

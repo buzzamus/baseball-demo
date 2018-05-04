@@ -12,7 +12,7 @@ class PositionPlayersController < ApplicationController
     @player = PositionPlayer.new(position_player_params)
     if @player.save
       flash[:success] = "Your player was saved successfully"
-      redirect_to position_players_path(@player)
+      redirect_to position_player_path(@player)
     else
       render 'new'
     end
