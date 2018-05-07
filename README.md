@@ -4,7 +4,7 @@ This is a demo of the "Baseball" Ruby Gem in use
 
 Current version: [![Gem Version](https://badge.fury.io/rb/baseball.svg)](https://badge.fury.io/rb/baseball)
 
-You can view the baseball Ruby gem repo [here](github.com/buzzamus/baseball-gem)
+You can view the baseball Ruby gem repo [here](https://github.com/buzzamus/baseball-gem)
 
 * Ruby version 2.5.1
 
