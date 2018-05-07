@@ -1,8 +1,9 @@
 <h1 class="center">All Pitchers</h1>
+<hr/>
 <div class="center">
 
   <% @pitchers.each do |pitcher| %>
-  <h3 class="link-border"><%= link_to "#{pitcher.name} - #{pitcher.arm}", pitcher_path(pitcher) %></h3>
+  <h3 class="bottom-marg top-marg"><%= link_to "#{pitcher.name} - #{pitcher.arm}", pitcher_path(pitcher), class: "link-border" %></h3>
   <% end %>
 
 </div>

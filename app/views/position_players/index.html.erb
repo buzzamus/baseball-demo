@@ -1,6 +1,8 @@
 <h1 class="center">All Position Players</h1>
 <hr/>
 
-<% @players.each do |player| %>
-  <h3 class="center link-border"><%= link_to "#{player.name} - #{player.position}", position_player_path(player) %></h3>
-<% end %>
+<div class="center">
+  <% @players.each do |player| %>
+    <h3 class="center bottom-marg top-marg"><%= link_to "#{player.name} - #{player.position}", position_player_path(player), class: "link-border" %></h3>
+  <% end %>
+</div>

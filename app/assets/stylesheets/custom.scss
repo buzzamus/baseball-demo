@@ -72,6 +72,10 @@ html, body {
   margin-bottom: 30px;
 }
 
+.top-marg {
+  margin-top: 20px;
+}
+
 .footer {
   position: absolute;
    border-top: 1px solid gray;
@@ -91,11 +95,10 @@ input {
 
 .link-border {
   border: 1px solid #22daf7;
-  border-radius: 5px;
+  border-radius: 10px;
   width: 50%;
   margin: 0 auto;
-  padding: 4px;
-  margin-bottom: 20px;
+  padding: 10px;
 }
 
 .link-border:hover {
