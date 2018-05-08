@@ -1,3 +1,4 @@
+<%= render 'layouts/errors', obj: @pitcher %>
 <%= form_for(@pitcher, html: { role: 'form' }) do |f| %>
   <div class="center">
     <p><%= f.label :name %></p>
