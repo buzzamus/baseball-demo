@@ -2,7 +2,7 @@
 <hr/>
 <div class="center">
 
-  <% @pitchers.each do |pitcher| %>
+  <% @pitchers.last(10).each do |pitcher| %>
   <h3 class="bottom-marg top-marg"><%= link_to "#{pitcher.name} - #{pitcher.arm}", pitcher_path(pitcher), class: "link-border" %></h3>
   <% end %>
 

@@ -1,8 +1,8 @@
-<h1 class="center">All Position Players</h1>
+<h1 class="center">Recently Created Players</h1>
 <hr/>
 
 <div class="center">
-  <% @players.each do |player| %>
+  <% @players.last(10).each do |player| %>
     <h3 class="center bottom-marg top-marg"><%= link_to "#{player.name} - #{player.position}", position_player_path(player), class: "link-border" %></h3>
   <% end %>
 </div>
