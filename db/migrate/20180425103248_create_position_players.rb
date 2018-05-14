@@ -12,6 +12,7 @@ class CreatePositionPlayers < ActiveRecord::Migration[5.2]
       t.integer :hbp
       t.integer :hits
       t.integer :rbis
+      t.integer :so
       t.integer :sac_flies
       t.string :avg
       t.string :obp
@@ -19,6 +20,7 @@ class CreatePositionPlayers < ActiveRecord::Migration[5.2]
       t.string :ops
       t.string :runs_created
       t.string :iso
+      t.string :babip
       t.timestamps
     end
   end

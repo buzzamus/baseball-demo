@@ -40,6 +40,7 @@ ActiveRecord::Schema.define(version: 2018_04_27_205647) do
     t.integer "hbp"
     t.integer "hits"
     t.integer "rbis"
+    t.integer "so"
     t.integer "sac_flies"
     t.string "avg"
     t.string "obp"
@@ -47,6 +48,7 @@ ActiveRecord::Schema.define(version: 2018_04_27_205647) do
     t.string "ops"
     t.string "runs_created"
     t.string "iso"
+    t.string "babip"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

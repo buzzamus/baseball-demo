@@ -3,7 +3,7 @@ require 'test_helper'
 class PositionPlayerTest < ActiveSupport::TestCase
   def setup
     @player = PositionPlayer.create!(name: "Ev Busby", position: "SS", singles: 106, doubles: 40, triples: 3,
-                                     hr: 40, at_bats: 608, walks: 83, hbp: 7, sac_flies: 2, rbis: 108, hits: 189)
+                                     hr: 40, at_bats: 608, walks: 83, hbp: 7, sac_flies: 2, rbis: 108, hits: 189, so: 99)
   end
 
   test "player should be valid" do
@@ -61,5 +61,9 @@ class PositionPlayerTest < ActiveSupport::TestCase
 
   test "iso should be figured automatically" do
     assert_equal ".273", @player.iso
+  end
+
+  test "babip should be figured automatically" do
+    assert_equal ".318", @player.babip
   end
 end

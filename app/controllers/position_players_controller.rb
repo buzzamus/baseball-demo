@@ -37,7 +37,7 @@ class PositionPlayersController < ApplicationController
 
   def position_player_params
     params.require(:position_player).permit(:name, :position, :hits, :singles, :doubles, :triples, :hr,
-                                            :walks, :at_bats, :sac_flies, :hbp, :rbis)
+                                            :walks, :at_bats, :sac_flies, :hbp, :rbis, :so)
   end
 
   def set_player

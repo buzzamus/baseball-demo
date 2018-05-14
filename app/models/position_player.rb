@@ -13,6 +13,7 @@ class PositionPlayer < ApplicationRecord
   validates :rbis, allow_nil: true, numericality: true, length: { in: 0..5 }
   validates :at_bats, allow_nil: true, numericality: true, length: { in: 0..5 }
   validates :hits, allow_nil: true, numericality: true, length: { in: 0..5 }
+  validates :so, allow_nil: true, numericality: true, length: { in: 0..5 }
   validates :sac_flies, allow_nil: true, numericality: true, length: { in: 0..5 }
   validates :avg, allow_nil: true, length: { in: 0..30 }
   validates :obp, allow_nil: true, length: { in: 0..30 }
@@ -20,6 +21,7 @@ class PositionPlayer < ApplicationRecord
   validates :ops, allow_nil: true, length: { in: 0..30 }
   validates :iso, allow_nil: true, length: { in: 0..30 }
   validates :runs_created, allow_nil: true, length: { in: 0..30 }
+  validates :babip, allow_nil: true, length: { in: 0..30 }
 
   private
 
@@ -34,6 +36,7 @@ class PositionPlayer < ApplicationRecord
     self.hbp ||= 0
     self.at_bats ||= 0
     self.sac_flies ||= 0
+    self.so ||= 0
   end
 
   def set_stats
@@ -45,7 +48,8 @@ class PositionPlayer < ApplicationRecord
       hr: hr,
       walks: walks,
       hbp: hbp,
-      at_bats: at_bats
+      at_bats: at_bats,
+      so: so
     }
     self.avg = Baseball.compile(player_stats).batting_average
     self.obp = Baseball.compile(player_stats).obp
@@ -53,6 +57,7 @@ class PositionPlayer < ApplicationRecord
     self.ops = Baseball.compile(player_stats).ops
     self.iso = Baseball.compile(player_stats).iso
     self.runs_created = Baseball.compile(player_stats).runs_created
+    self.babip = Baseball.compile(player_stats).babip
   end
 
   def set_hits
